@@ -1,0 +1,49 @@
+{
+  "name": "kn_private_api",
+  "version": "1.0.0",
+  "description": "KN API v1.0",
+  "main": "src/server_kn.js",
+  "scripts": {
+    "start": "node src/server_kn.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "example",
+    "async",
+    "await",
+    "tutorial",
+    "wrapper"
+  ],
+  "author": "TGH",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cheerio": "^1.0.0-rc.10",
+    "compression": "^1.7.4",
+    "cors": "^2.8.5",
+    "dotenv": "^4.0.0",
+    "express": "^4.19.2",
+    "express-graphql": "^0.6.12",
+    "express-jwt": "^5.3.3",
+    "graphql": "^0.12.3",
+    "graphql-fields": "^2.0.3",
+    "graphql-type-json": "^0.3.2",
+    "graphql-upload": "^10.0.0",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mkdirp": "^3.0.1",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^1.7.0",
+    "nodemailer": "^6.7.2",
+    "readline": "^1.3.0",
+    "request": "^2.88.2",
+    "sequelize": "^5.22.5",
+    "shortid": "^2.2.15",
+    "socket.io": "^4.7.3",
+    "stream": "0.0.2",
+    "xlsx": "^0.18.5"
+  }
+}
