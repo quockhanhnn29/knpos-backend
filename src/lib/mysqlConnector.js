@@ -6,6 +6,7 @@ class MySQLConnector {
 
     //This constant-like getters will be used to connect to MySQL
     get MYSQL_DB_ADDRESS() { return process.env.MYSQL_DB_ADDRESS || 'localhost' }
+    get MYSQL_DB_PORT() { return process.env.MYSQL_DB_PORT || process.env.MYSQLPORT || 3306 }
     get MYSQL_DB_USER() { return process.env.MYSQL_DB_USER || 'root' }
     get MYSQL_DB_PASSWORD() { return process.env.MYSQL_DB_PASSWORD || '' }
     get MYSQL_DB_NAME() { return process.env.MYSQL_DB_NAME || 'employees' }
@@ -15,6 +16,7 @@ class MySQLConnector {
         //Instantiates the connection pool
         this.internalPool = mysql.createPool({
             host: this.MYSQL_DB_ADDRESS,
+            port: this.MYSQL_DB_PORT,
             user: this.MYSQL_DB_USER,
             database: this.MYSQL_DB_NAME,
             password: this.MYSQL_DB_PASSWORD,
