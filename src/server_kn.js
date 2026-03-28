@@ -63,8 +63,8 @@ class App {
             log_stdout.write(new Date().toISOString() + ': ' + util.format(d) + '\n');
         };
 
-        this.http_server = http.createServer(this.expressApp).listen(this.configs.port, '0.0.0.0', () => {
-            console.log(`🚀 The server is running on http://localhost:${this.configs.port}/api`)
+        this.http_server = http.createServer(this.expressApp).listen(this.configs.port, () => {
+            console.log(`🚀 The server is running on port ${this.configs.port}/api`)
             console.log(`Environment: ${process.env.STAGE || "development"}`)
         })
 
